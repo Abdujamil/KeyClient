@@ -183,7 +183,7 @@ main .container .gallery {
   width: 686px;
   height: 878px;
   padding: 24px;
-  background-image: url(../images/1.png);
+  background-image: url(../images/7.jpg);
   background-repeat: none;
   background-size: cover;
 }
@@ -195,6 +195,8 @@ main .container .gallery .gallery__images {
 }
 main .container .gallery .gallery__images img {
   cursor: pointer;
+  width: 70px;
+  height: 91px;
 }
 @media (max-width: 1100px) {
   main .container .gallery {

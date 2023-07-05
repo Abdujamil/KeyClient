@@ -44,8 +44,8 @@
             <img class="close" src="./images/close.svg" alt="close" />
             <h1>Купить в 1 клик</h1>
             <input
-              type="tel"
-              name="phone"
+              oninput="formatPhoneNumber(this)"
+              type="text"
               id="phone"
               placeholder="+ 7 (---) --- -- -- "
             />
@@ -62,14 +62,15 @@
           </div>
         </div>
       </div>
+
       <div class="container">
         <div class="gallery">
           <div class="gallery__images">
-            <img src="./images/1.png" alt="1" />
-            <img src="./images/2.png" alt="2" />
-            <img src="./images/3.png" alt="3" />
-            <img src="./images/4.png" alt="4" />
-            <img src="./images/5.png" alt="5" />
+            <img src="./images/8.jpg" alt="3" />
+            <img src="./images/6.jpg" alt="1" />
+            <img src="./images/7.jpg" alt="2" />
+            <img src="./images/9.jpg" alt="4" />
+            <img src="./images/10.jpg" alt="5" />
           </div>
         </div>
         <div class="buy">
@@ -79,7 +80,6 @@
             <div class="reviews__review">
               <h3>Отзывы</h3>
               <div class="review__stars">
-                <img src="./images/icon_star_fill.svg" alt="star" />
                 <img src="./images/icon_star_fill.svg" alt="star" />
                 <img src="./images/icon_star_fill.svg" alt="star" />
                 <img src="./images/icon_star_fill.svg" alt="star" />
@@ -206,7 +206,6 @@
             <i class="clearable__clear">&times;</i>
             <button class="news__btn">Подписаться</button>
           </span>
-
         </div>
       </div>
     </footer>
