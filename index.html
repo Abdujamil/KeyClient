@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyClientt</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header_head">
+        <a href="/">
+          <img src="../images/LOGO.svg" alt="logo" />
+        </a>
+        <div class="head_body">
+          <img src="../images/person.svg" alt="person" />
+          <img src="../images/favorite.svg" alt="favorite" />
+          <img src="../images/shop.svg" alt="shop" />
+          <img class="burger" src="../images/menu.svg" alt="menu" />
+        </div>
+      </div>
+      <div class="mob_menu" style="display: none">
+        <div class="mob_menu__body">
+          <img
+            class="mob_menu_close_icon"
+            src="../images/close.svg"
+            alt="close"
+          />
+          <ul class="menu__links">
+            <li><a href="#">Постельное белье</a></li>
+            <li><a href="#">одежда для дома</a></li>
+            <li><a href="#">Одежда для улицы</a></li>
+            <li><a href="#">Выход</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="myModal" class="popup">
+        <div class="popup__content">
+          <div class="popup__body">
+            <img class="close" src="../images/close.svg" alt="close" />
+            <h1>Купить в 1 клик</h1>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="+ 7 (---) --- -- -- "
+            />
+            <input type="name" name="name" id="name" placeholder="Ваше имя" />
+          </div>
+          <div class="popup__foot">
+            <p>
+              Нажимая кнопку “Отправить”, я даю согласие на обработку моих
+              персональных данных в соответствии с
+              <a href="#">Условиями конфиденциальности</a>
+            </p>
+
+            <button>Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="gallery">
+          <div class="gallery__images">
+            <img src="../images/1.png" alt="1" />
+            <img src="../images/2.png" alt="2" />
+            <img src="../images/3.png" alt="3" />
+            <img src="../images/4.png" alt="4" />
+            <img src="../images/5.png" alt="5" />
+          </div>
+        </div>
+        <div class="buy">
+          <div class="buy__reviews">
+            <h1>Пижама для девочек</h1>
+            <p>Арт. 02765/46</p>
+            <div class="reviews__review">
+              <h3>Отзывы</h3>
+              <div class="review__stars">
+                <img src="../images/icon_star_fill.svg" alt="star" />
+                <img src="../images/icon_star_fill.svg" alt="star" />
+                <img src="../images/icon_star_fill.svg" alt="star" />
+                <img src="../images/icon_star_fill.svg" alt="star" />
+                <img src="../images/icon_star_fill.svg" alt="star" />
+                <img src="../images/icon_star.svg" alt="star" />
+              </div>
+              <p>14 отзывов</p>
+              <img src="../images/arrow_right_swipe.svg" alt="arrow" />
+            </div>
+          </div>
+          <div class="buy__price">
+            <div class="price__title">
+              <h1>800 ₽</h1>
+              <h3>1 500 ₽</h3>
+              <img src="../images/arrow_right_swipe.svg" alt="arrow" />
+            </div>
+            <div class="price__sale">
+              <p>скидка -47%</p>
+              <p>акция -20%</p>
+            </div>
+          </div>
+          <div class="buy__size__selector">
+            <select id="size">
+              <option value="" selected>Выберите размер</option>
+              <option value="S">S</option>
+              <option value="M">M</option>
+              <option value="L">L</option>
+              <option value="XL">XL</option>
+            </select>
+            <h2><a href="#">Определить размер</a></h2>
+          </div>
+          <div class="buy__favor">
+            <div class="favor__body">
+              <div class="buy__favor__quantity-selector">
+                <button class="quantity_btn plus">+</button>
+                <input
+                  type="text"
+                  class="quantity_input"
+                  value="1"
+                  min="1"
+                  readonly
+                  disabled
+                />
+                <button class="quantity_btn minus">-</button>
+              </div>
+              <div class="buy__favor__add-to-cart">
+                <button class="add-to-cart-btn">Добавить в корзину</button>
+                <span class="icon"
+                  ><svg
+                    class="heart-icon"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.9004 7.0948C10.7002 1.47892 1.40917 5.90389 5.76074 11.6018C10.1123 17.2996 12.4004 19.4908 12.4004 19.4908"
+                      stroke="white"
+                    />
+                    <path
+                      d="M11.8943 7.0948C13.0945 1.47892 22.7306 5.90389 18.379 11.6018C14.0275 17.2996 11.7002 19.5 11.7002 19.5"
+                      stroke="white"
+                    />
+                    <path
+                      d="M11.3911 6.70752L12.4044 6.70757L12.3835 7.24079H11.3911V6.70752Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <a id="myBtn" href="#">Купить в 1 клик</a>
+          </div>
+          <div class="buy__goods-desc">
+            <div class="goods-desc__desc">
+              <img src="../images/person.svg" alt="icon" />
+              <a href="#">Описание товара</a>
+            </div>
+            <div class="goods-desc__desc">
+              <img src="../images/clock.svg" alt="icon" />
+              <a href="#">Доставка и возврат</a>
+            </div>
+            <div class="goods-desc__desc">
+              <img src="../images/pay.svg" alt="icon" />
+              <a href="#">Способы оплаты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_foot">
+        <div class="bayer">
+          <h1>покупателям</h1>
+
+          <div class="bayer__links">
+            <a href="#">Каталог</a>
+
+            <a href="#">Акции</a>
+
+            <a href="#">Бренды</a>
+          </div>
+        </div>
+
+        <div class="about">
+          <h1>о нас</h1>
+
+          <div class="about__links">
+            <a href="#">О компании</a>
+
+            <a href="#">Новости</a>
+
+            <a href="#">Команда</a>
+          </div>
+        </div>
+
+        <div class="news">
+          <h1>Узнайте первыми о новинках и акциях</h1>
+
+          <span class="clearable">
+            <input type="email" placeholder="Адрес электронной почты" />
+            <i class="clearable__clear">&times;</i>
+            <button class="news__btn">Подписаться</button>
+          </span>
+
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
